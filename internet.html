@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html mip lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--<link rel="canonical" href="https://www.example.com/mip/internet.html">-->
+  <link rel="stylesheet" type="text/css" href="https://c.mipcdn.com/static/v1/mip.css">
+  <title>互联网产品</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <style mip-custom>
+    /*---------------------头部--------------*/
+    .clearfix:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  
+    header.header {
+      border-top: 1px solid #fff;
+      width: 100%;
+      z-index:9999;
+    }
+  
+    header.header span {
+      display: inline-block;
+      height: 1rem;
+    }
+  
+    header.header .fl {
+      float: left;
+      line-height: 1rem;
+      font-family: PingFang-SC-Bold;
+      font-size: 0.38rem;
+      padding-left: 1.01rem;
+      background: url("./images/logo.png") 0.3rem center no-repeat;
+      background-size: 0.48rem 0.48rem;
+    }
+  
+    header.header .fr {
+      float: right;
+      width: 0.43rem;
+      height: 1rem;
+      margin-right: 0.3rem;
+      display: block;
+      background: url("./images/down.png") no-repeat right center;
+      background-size: 0.42rem 0.32rem;
+    }
+  
+    header.header .fr.down {
+      width: 0.32rem;
+      background: url("./images/x.png") no-repeat right center;
+      background-size: 0.32rem 0.32rem;
+    }
+  
+    .MIP-POPUP-LAYER-MASK {
+      position: fixed !important;
+      top: 1rem !important;
+      left: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      background-color: rgba(0, 0, 0, .8);
+    }
+  
+    #popuplx{
+      top:1rem;
+    }
+  
+    header.header .list {
+      top: 1rem;
+      border-top: 0.2rem solid #f7f7f8;
+      width: 7.5rem;
+      z-index: 9999;
+    }
+  
+    header.header .list li {
+      background-color: #fff;
+      text-align: center;
+      font-family: PingFang-SC-Medium;
+      font-size: 0.32rem;
+      line-height: 1rem;
+      border-bottom: 1px solid #e9ebee;
+      width: 100%;
+    }
+  
+    header.header .list li a {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      color: #000000;
+    }
+  
+  
+    /*---------------------------banner-------------------*/
+    banner mip-img {
+      width: 100%;
+      display: block;
+    }
+  
+    /*---------------------产品服务-------------------*/
+    .proservice {
+      text-align: center;
+      background-color: #f7f7f8;
+      padding: 0.3rem 0.3rem 0.1rem;
+    }
+  
+    .proservice h2 {
+      line-height: 1.2rem;
+      font-family: PingFang-SC-Medium;
+      font-size: 0.44rem;
+      font-weight: normal;
+    }
+  
+    .proservice ul li {
+      width: 48%;
+      height: 3.15rem;
+      padding-top: 1rem;
+      box-sizing: border-box;
+      margin-bottom: 0.2rem;
+    }
+  
+    .proservice ul li:nth-child(odd) {
+      float: left;
+    }
+  
+    .proservice ul li:nth-child(even) {
+      float: right;
+    }
+  
+    .proservice ul li h3 {
+      font-size: 0.28rem;
+      line-height: 0.7rem;
+    }
+  
+    .proservice ul li p {
+      font-size: 0.2rem;
+      line-height: 0.3rem;
+      color: #62686f;
+    }
+  
+    .proservice ul li:nth-child(1) {
+      background: url("./images/icon1.png") no-repeat center 0.3rem;
+      background-color: #fff;
+      background-size: 0.7rem 0.7rem;
+    }
+  
+    .proservice ul li:nth-child(2) {
+      background: url("./images/icon2.png") no-repeat center 0.3rem;
+      background-color: #fff;
+      background-size: 0.7rem 0.61rem;
+    }
+  
+    .proservice ul li:nth-child(3) {
+      background: url("./images/icon3.png") no-repeat center 0.3rem;
+      background-color: #fff;
+      background-size: 0.7rem 0.73rem;
+    }
+  
+    .proservice ul li:nth-child(4) {
+      background: url("./images/icon4.png") no-repeat center 0.3rem;
+      background-color: #fff;
+      background-size: 0.7rem 0.7rem;
+    }
+  
+    .proservice ul li:nth-child(5) {
+      background: url("./images/icon5.png") no-repeat center 0.3rem;
+      background-color: #fff;
+      background-size: 0.74rem 0.74rem;
+    }
+  
+    .proservice ul li:nth-child(6) {
+      background: url("./images/icon6.png") no-repeat center 0.3rem;
+      background-color: #fff;
+      background-size: 0.7rem 0.73rem;
+    }
+  
+    /*-------------------底部-----------------*/
+    footer {
+      padding-top: 0.83rem;
+      position: relative;
+    }
+  
+    footer mip-img {
+      width: 4rem;
+      height: 4.18rem;
+      float:left;
+    }
+  
+    footer .fl {
+      line-height: 0.58rem;
+      display:inline-block;
+      font-family: PingFang-SC-Bold;
+      font-size: 0.38rem;
+      padding-left: 1.01rem;
+      background: url("./images/logo.png") 0.3rem center no-repeat;
+      background-size: 0.48rem 0.48rem;
+    }
+  
+    footer .des {
+      font-size: 0.22rem;
+      line-height:0.39rem;
+      color: #50565d;
+      position: absolute;
+      top:1.8rem;
+      left:4.3rem;
+    }
+  
+    footer .down {
+      display: inline-block;
+      width: 2.54rem;
+      height: 0.9rem;
+      line-height: 0.9rem;
+      border-radius: 0.08rem;
+      border: solid 1px #d6d6e4;
+      font-size: 0.24rem;
+      text-indent: 0.8rem;
+      color: #62686f;
+      position: absolute;
+      left:4.3rem;
+    }
+  
+    footer .down.android {
+      background: url("./images/andriod.png") no-repeat 0.3rem center;
+      background-size: 0.35rem 0.4rem;
+      top:2.3rem;
+    }
+  
+    footer .down.iphone {
+      background: url("./images/apple.png") no-repeat 0.3rem center;
+      background-size: 0.35rem 0.41rem;
+      top:3.4rem;
+    }
+
+    .mip-appdl-closebutton {
+      display: none;
+    }
+    
+    .mip-appdl-textbox {
+      display: none;
+    }
+
+    .mip-appdl-box.mip-appdl-pm10 {
+      display: none;
+    }
+
+    .mip-appdl-box.mip-appdl-pm10 a {
+      color:#000;
+    }
+
+    .mip-appdl-downbtn {
+      /*display: inline-block;*/
+      width: 2.54rem;
+      height: 0.9rem;
+      line-height: 0.9rem;
+      border-radius: 0.08rem;
+      border: solid 1px #d6d6e4;
+      font-size: 0.24rem;
+      text-indent: 0.8rem;
+      color: #62686f;
+      position: absolute;
+      left:4.3rem;
+    }
+
+  </style>
+  
+</head>
+<body>
+
+<!--头部-->
+<header class="header clearfix">
+  <span class="fl">标架</span>
+  <span class="fr" on="tap:popuplx.closeAll tap:popuplx.toggle">
+  </span>
+  <mip-popup-layer id="popuplx" layout="nodisplay" >
+    <ul class="list">
+      <li><a data-type="mip" href="./index.html">首页</a></li>
+      <li><a data-type="mip" href="./field.html">业务领域</a></li>
+      <li><a data-type="mip" href="./internet.html">互联网产品</a></li>
+      <li><a data-type="mip" href="./news.html">新闻资讯</a></li>
+      <li><a data-type="mip" href="aboutbrand.html">关于标架</a></li>
+      <li><a data-type="mip" href="./contactus.html">联系我们</a></li>
+    </ul>
+  </mip-popup-layer>
+</header>
+
+<!--banner-->
+<banner class="banner"><mip-img src="./images/internet/banner.jpg" alt="" ></mip-img></banner>
+
+<!--产品服务-->
+<section class="proservice">
+  <ul class="clearfix">
+    <!--<li>-->
+    <!--<a target="_blank" href="#">-->
+    <!--<h3>注册商标</h3>-->
+    <!--<p>查询商标是否被注册</p>-->
+    <!--<p>查询商标可否购买</p>-->
+    <!--<p>查询商标注册成功率</p>-->
+    <!--<p>专业咨询，满足需求</p>-->
+    <!--</a>-->
+    <!--</li>-->
+    <li>
+      <a target="_blank" href="http://m.test.alibiaojia.com:8093/module/buyindex">
+        <h3>购买商标</h3>
+        <p>明码标价</p>
+        <p>担保成交</p>
+        <p>信息透明</p>
+        <p>智能推荐</p>
+      </a>
+    </li>
+    <li>
+      <a target="_blank" href="http://m.test.alibiaojia.com:8093/module/sellform">
+        <h3>销售商标</h3>
+        <p>单个发布</p>
+        <p>批量发布</p>
+        <p>商标管理</p>
+        <p>商标推广</p>
+      </a>
+    </li>
+    <!--<li>-->
+    <!--<a target="_blank" href="#">-->
+    <!--<h3>商标起名</h3>-->
+    <!--<p>集合众智起名</p>-->
+    <!--<p>参与起名悬赏</p>-->
+    <!--<p>用智慧赚取额外收入</p>-->
+    <!--<p>系统自带成功率检测</p>-->
+    <!--</a>-->
+    <!--</li>-->
+    <li>
+      <a target="_blank" href="http://m.test.alibiaojia.com:8093/module/brindex">
+        <h3>品牌维权</h3>
+        <p>输入品牌名称</p>
+        <p>检索京东天猫等平台</p>
+        <p>获取专业精准数据</p>
+        <p>保护企业品牌</p>
+      </a>
+    </li>
+    <li>
+      <a target="_blank" href="http://m.test.alibiaojia.com:8093/module/industryindex">
+        <h3>行业情报</h3>
+        <p>输入品牌名称</p>
+        <p>商品竞争情况</p>
+        <p>商品市场行情</p>
+        <p>即可尽收眼底</p>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<!--底部-->
+<footer class="clearfix">
+  <mip-img src="./images/phone.png" alt=""></mip-img>
+  <span class="fl">标架</span>
+  <p class="des">自主推广买卖商标的货架</p>
+  <a data-type="mip" href="https://itunes.apple.com/cn/app/sao-huo-bang/id1365391216?mt=8" class="down android">Android下载</a>
+  <a data-type="mip" href="https://m.alibiaojia.com/app/bj.apk" class="down iphone">iphone下载</a>
+</footer>
+
+<script src="https://c.mipcdn.com/static/v1/mip.js"></script>
+<script src="https://mipcache.bdstatic.com/extensions/platform/v1/mip-popup-layer/mip-popup-layer.js"></script>
+<script src="https://c.mipcdn.com/static/v1/mip-appdl/mip-appdl.js"></script>
+
+</body>
+</html>

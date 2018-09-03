@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html mip lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0">
+  <!--<link rel="canonical" href="https://www.example.com/mip/aboutbrand.html">-->
+  <link rel="stylesheet" type="text/css" href="https://c.mipcdn.com/static/v1/mip.css">
+  <title>关于标架</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <style mip-custom>
+    /*---------------------头部--------------*/
+    .clearfix:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    
+    .clearfix:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    header.header {
+      border-top: 1px solid #fff;
+      width: 100%;
+      z-index:9999;
+    }
+
+    header.header span {
+      display: inline-block;
+      height: 1rem;
+    }
+
+    header.header .fl {
+      float: left;
+      line-height: 1rem;
+      font-family: PingFang-SC-Bold;
+      font-size: 0.38rem;
+      padding-left: 1.01rem;
+      background: url("./images/logo.png") 0.3rem center no-repeat;
+      background-size: 0.48rem 0.48rem;
+    }
+
+    header.header .fr {
+      float: right;
+      width: 0.43rem;
+      height: 1rem;
+      margin-right: 0.3rem;
+      display: block;
+      background: url("./images/down.png") no-repeat right center;
+      background-size: 0.42rem 0.32rem;
+    }
+
+    header.header .fr.down {
+      width: 0.32rem;
+      background: url("./images/x.png") no-repeat right center;
+      background-size: 0.32rem 0.32rem;
+    }
+
+    .MIP-POPUP-LAYER-MASK {
+      position: fixed !important;
+      top: 1rem !important;
+      left: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      background-color: rgba(0, 0, 0, .8);
+    }
+
+    #popuplx{
+      top:1rem;
+    }
+
+    header.header .list {
+      top: 1rem;
+      border-top: 0.2rem solid #f7f7f8;
+      width: 7.5rem;
+      z-index: 9999;
+    }
+
+    header.header .list li {
+      background-color: #fff;
+      text-align: center;
+      font-family: PingFang-SC-Medium;
+      font-size: 0.32rem;
+      line-height: 1rem;
+      border-bottom: 1px solid #e9ebee;
+      width: 100%;
+    }
+
+    header.header .list li a {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      color: #000000;
+    }
+    /*------------------banner----------------*/
+    .banner {
+      display: block;
+      width: 100%;
+    }
+  
+  
+    /*------------------文字-------------*/
+    article {
+      padding:0.5rem 0.3rem;
+      font-size: 0.3rem;
+      line-height: 0.5rem;
+      color: #62686f;
+      text-indent: 2em;
+    }
+  </style>
+</head>
+<body>
+
+<!--头部-->
+<header class="header clearfix">
+  <span class="fl">标架</span>
+  <span class="fr" on="tap:popuplx.closeAll tap:popuplx.toggle">
+  </span>
+  <mip-popup-layer id="popuplx" layout="nodisplay" >
+    <ul class="list">
+      <li><a data-type="mip" href="./index.html">首页</a></li>
+      <li><a data-type="mip" href="./field.html">业务领域</a></li>
+      <li><a data-type="mip" href="./internet.html">互联网产品</a></li>
+      <li><a data-type="mip" href="./news.html">新闻资讯</a></li>
+      <li><a data-type="mip" href="aboutbrand.html">关于标架</a></li>
+      <li><a data-type="mip" href="./contactus.html">联系我们</a></li>
+    </ul>
+  </mip-popup-layer>
+</header>
+
+<!--banner-->
+<mip-img src="./images/aboutbrand/banner.jpg" alt="" class="banner"></mip-img>
+
+<!--文字-->
+<article>
+  上海标架信息科技有限公司（以下简称标架），是一家集研发、创新、销售和服务于一体的现代科技型知识产权公司。标架专注于商标和品牌服务为核心的知识产权领域。公司坚持稳健发展、持续创新、开放合作，致力于通过大数据、人工智能、区块链技术应用等科技手段，将传统知识产权服务与互联网融合，为个人、企业、乃至知识产权全行业提供一站式服务。
+</article>
+
+<script src="https://c.mipcdn.com/static/v1/mip.js"></script>
+<script src="https://mipcache.bdstatic.com/extensions/platform/v1/mip-popup-layer/mip-popup-layer.js"></script>
+</body>
+</html>
