@@ -1,0 +1,27 @@
+1.除了base.css，其他样式都写在<style mip-custom>里面，只能出现一次
+2.用到的组件大致如下
+弹出菜单组件<mip-popup-layer id="popuplx" layout="nodisplay">
+MIP页之间跳转推荐使用<a data-type="mip">
+轮播图组件<mip-carouse>
+图片标签<mip-img>
+表单提交<mip-form>
+tab栏目<mip-vd-tabs>
+回退<mip-history history="go, -1">
+
+翻页应该设计成无限下拉：
+<mip-list
+    template="mip-template-id"
+    src="http://xxx?a=a&b=b"
+    id="mip-list"
+    has-more
+    pnName="pageNum"
+    pn=2
+    timeout="3000"
+    preLoad>
+    <template type="mip-mustache" id="mip-template-id">
+        <div>
+            <li>{{key}}: {{value}}</li>
+        </div>
+    </template>
+</mip-list>
+<div class="mip-list-more" on="tap:mip-list.more"> 点击查看更多 </div>

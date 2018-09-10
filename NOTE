@@ -1,0 +1,34 @@
+官网：https://www.mipengine.org/doc/00-mip-101.html
+博客：https://www.cnblogs.com/mipengine/
+
+MIP通过提供 MIP-HTML 规范、MIP-JS 运行环境以及 MIP-Cache 页面缓存系统，实现移动网页加速
+MIP-HTML：基于 HTML 中的基础标签制定了全新的规范，通过对一部分基础标签的使用限制或功能扩展，使 HTML 能够展现更加丰富的内容
+MIP-JS：可以保证 MIP-HTML 页面的快速渲染
+MIP-Cache：用于实现 MIP 页面的高速缓存，从而进一步提高页面性能
+
+1. 创建 HTML 文件
+在 <html> 标签中增加 mip 属性标识。 <html mip>
+
+2. 添加 MIP 运行环境
+在 HTML 代码中，添加 MIP 依赖的 mip.js 和 mip.css
+
+3. 添加 MIP 关联标签
+<link rel="miphtml"> 和 <link rel="canonical"> 主要用于告知搜索引擎页面间的关系。添加关联标签后，MIP 页的会继承 原页面(移动端) 的点击权重，同时 MIP 页 将作为搜索引擎的首选导流页面
+
+4. 添加样式
+出于速度考虑，建议內联使用 CSS 样式。所有样式写在 <style mip-custom></style> 中，注意：style 标签仅允许出现一次
+
+5. 替换禁用 HTML 标签
+MIP 十分关注页面速度，也因此禁用了一些引起拖慢速度的 HTML 标签。
+例如，<img> 标签会引起浏览器的 repaint 和 reflow，MIP用<mip-img>
+<video>禁止使用	需替换为 <mip-video>
+<audio>禁止使用	需替换为 <mip-audio>
+
+6. 使用 MIP 组件
+出于对代码质量和性能的考虑，MIP 页中不允许自定义 JavaScript 代码
+在一个合法的 MIP 页面中，所有的交互通过引入 MIP 组件实现。MIP 组件可以理解为封装了 JS 的自定义 HTML 标签。<mip-img> 也是一个 MIP 组件
+在使用组件时，请注意阅读组件文档，查看组件是否依赖所需脚本。如果依赖，请在 mip.js 之后引入脚本
+
+7. 预览
+开发完成后，可以使用 MIP 校验工具 保证代码规范。
+
